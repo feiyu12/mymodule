@@ -1,11 +1,13 @@
 {
-  "name": "mymodule",
-  "version": "0.1.0",
-  "private": true,
+  "name": "feiyumodule",
+  "version": "0.1.1",
+  "private": false,
+  "main": "lib/feiyumodule.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name feiyumodule --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -36,6 +38,15 @@
     },
     "rules": {}
   },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/chenzhouheng/mymodule.git"
+  },
+  "keywords": [
+    "二次封装组件",
+    "封装组件",
+    "components"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",
