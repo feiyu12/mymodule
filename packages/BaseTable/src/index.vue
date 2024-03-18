@@ -3,7 +3,7 @@
  * @Author: czh
  * @Date: 2024-03-13 16:12:55
  * @LastEditors: czh
- * @LastEditTime: 2024-03-16 13:14:26
+ * @LastEditTime: 2024-03-18 16:19:59
 -->
 <template>
   <el-table :data="dataList" v-bind="$attrs" v-on="$listeners">
@@ -76,7 +76,7 @@
       :fixed="operation.fixed"
       :width="operation.width"
       :min-width="operation.minWidth"
-      v-if="operation.show"
+      v-if="operationShow"
     >
       <slot slot-scope="scope" :data="scope"> </slot>
     </el-table-column>
@@ -123,13 +123,14 @@ export default {
       default: () => {
         return {
           label: "操作",
-          show: true,
           width: "170",
           mintWidth: "170",
           fixed: false,
         };
       },
     },
+    // 是否显示操作栏
+    operationShow:true
   },
   methods: {
     getTableData(row, prop) {
