@@ -47,10 +47,6 @@
     },
     "rules": {}
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/feiyu12/mymodule.git"
-  },
   "keywords": [
     "二次封装组件",
     "封装组件",
