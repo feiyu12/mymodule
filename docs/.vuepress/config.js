@@ -3,7 +3,7 @@
  * @Author: czh
  * @Date: 2024-03-17 23:35:34
  * @LastEditors: czh
- * @LastEditTime: 2024-03-19 13:51:24
+ * @LastEditTime: 2024-03-19 14:35:06
  */
 module.exports = {
   // 网站的一些基本配置
@@ -18,8 +18,8 @@ module.exports = {
   ],
   themeConfig: {
     // 你的GitHub仓库，请正确填写
-    // repo: "https://gitee.com/chenzhouheng/mymodule.git",
-    // repoLabel: "GitHub",
+    repo: "https://github.com/feiyu12/mymodule.git",
+    repoLabel: "GitHub",
     nav: [
       { text: "主页", link: "/" },
       { text: "实际项目问题", link: "/projectProblem/permission" },
