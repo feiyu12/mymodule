@@ -8,3 +8,10 @@
 npm install async-validator@1.11.5
 yarn add async-validator@1.11.5
 ```
+###　开发中出现很多打包的问题，都是因为包的版本有问题
+
+```
+查看webpack 版本
+yarn list webpack 
+npm ls webpack
+```
