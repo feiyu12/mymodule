@@ -1,6 +1,6 @@
 {
   "name": "feiyumodule",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "main": "lib/feiyumodule.umd.min.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.3",
-    "@vue/cli-plugin-eslint":"^4.5.3",
+    "@vue/cli-plugin-eslint": "^4.5.3",
     "@vue/cli-service": "^4.5.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
