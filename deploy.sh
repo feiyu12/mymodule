@@ -4,7 +4,7 @@
  # @Author: czh
  # @Date: 2024-03-19 14:06:35
  # @LastEditors: czh
- # @LastEditTime: 2024-03-19 14:12:01
+ # @LastEditTime: 2024-03-19 14:33:52
 ### 
 set -e
 
@@ -19,7 +19,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://gitee.com/chenzhouheng/mymodule.git master:gh-pages
+git push -f https://github.com/feiyu12/mymodule.git master:gh-pages
 
 
 cd -
