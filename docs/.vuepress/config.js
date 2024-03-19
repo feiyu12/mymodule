@@ -3,7 +3,7 @@
  * @Author: czh
  * @Date: 2024-03-17 23:35:34
  * @LastEditors: czh
- * @LastEditTime: 2024-03-19 09:39:07
+ * @LastEditTime: 2024-03-19 13:51:24
  */
 module.exports = {
   // 网站的一些基本配置
@@ -49,56 +49,56 @@ module.exports = {
       ],
     },
   },
-  // chainWebpack(config) {
-  //   config.resolve.alias.set("core-js/library/fn", "core-js/features");
-  // },
-  // configureWebpack: {
-  //   module: {
-  //     rules: [
-  //       {
-  //         test: /\.tsx?$/,
-  //         exclude: /node_modules/,
-  //         use: [
-  //           "cache-loader",
-  //           {
-  //             loader: "babel-loader",
-  //             options: {
-  //               babelrc: false,
-  //               configFile: false,
-  //               presets: [
-  //                 "@babel/preset-env", // 可以识别es6语法
-  //                 "@vue/babel-preset-jsx", // 解析jsx语法
-  //               ],
-  //             },
-  //           },
-  //           {
-  //             loader: "ts-loader",
-  //             options: {
-  //               appendTsxSuffixTo: [/\.vue$/, /\.md$/],
-  //             },
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
-  // },
-  // plugins: [
-  //   [
-  //     "vuepress-plugin-typescript",
-  //     {
-  //       tsLoaderOptions: {
-  //         // ts-loader 的所有配置项
-  //       },
-  //     },
-  //   ],
-  //   // ['@vuepress/plugins-back-to-top', false],
-  //   [
-  //     "vuepress-plugin-gotop-plus",
-  //     {
-  //       // mobileShow: false,
-  //       threshold: 150,
-  //     },
-  //   ],
-  //   "@vuepress-reco/extract-code",
-  // ],
+  chainWebpack(config) {
+    config.resolve.alias.set("core-js/library/fn", "core-js/features");
+  },
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          exclude: /node_modules/,
+          use: [
+            "cache-loader",
+            {
+              loader: "babel-loader",
+              options: {
+                babelrc: false,
+                configFile: false,
+                presets: [
+                  "@babel/preset-env", // 可以识别es6语法
+                  "@vue/babel-preset-jsx", // 解析jsx语法
+                ],
+              },
+            },
+            {
+              loader: "ts-loader",
+              options: {
+                appendTsxSuffixTo: [/\.vue$/, /\.md$/],
+              },
+            },
+          ],
+        },
+      ],
+    },
+  },
+  plugins: [
+    [
+      "vuepress-plugin-typescript",
+      {
+        tsLoaderOptions: {
+          // ts-loader 的所有配置项
+        },
+      },
+    ],
+    // ['@vuepress/plugins-back-to-top', false],
+    [
+      "vuepress-plugin-gotop-plus",
+      {
+        // mobileShow: false,
+        threshold: 150,
+      },
+    ],
+    "@vuepress-reco/extract-code",
+  ],
 };
