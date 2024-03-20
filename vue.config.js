@@ -3,18 +3,15 @@
  * @Author: czh
  * @Date: 2024-03-13 15:46:30
  * @LastEditors: czh
- * @LastEditTime: 2024-03-15 16:52:55
+ * @LastEditTime: 2024-03-20 09:30:58
  */
-const { defineConfig } = require('@vue/cli-service')
 const path = require('path')
 const isProduction = process.env.NODE_ENV === 'production'
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
-module.exports = defineConfig({
+module.exports = {
   lintOnSave:false,
-  transpileDependencies: true,
-
   pages: {
     index: {
       entry: 'examples/main.js',
@@ -37,4 +34,4 @@ module.exports = defineConfig({
       }
     }
   }
-})
+}
